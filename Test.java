@@ -12,14 +12,19 @@ public class Test {
 		ContactoPersonal cpersonal = new ContactoPersonal("Juan", "juan@gmail.com",
 				dpersonal, "2025-08-29");
 		
-		System.out.println(cpersonal);
+		//System.out.println(cpersonal);
 		
 		Direccion dprofesional = new Direccion("Calle empresa", 555, 1409);
 		ContactoProfesional cprofesional = new ContactoProfesional("Laura", 
 				"laura@gmail.com", dprofesional, "ACME S.A.");
 
-		System.out.println(cprofesional);
+		//System.out.println(cprofesional);
 		
+		Agenda unaAgenda = new Agenda();
+		unaAgenda.agregarContacto(cprofesional);
+		unaAgenda.agregarContacto(cpersonal);
+		
+		unaAgenda.mostrarAgenda();
 		
 	}
 	
