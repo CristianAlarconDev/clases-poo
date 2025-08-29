@@ -17,6 +17,12 @@ public class ContactoProfesional extends Contacto{
 	}
 
 
+	@Override
+	public String toString() {
+		return "ContactoProfesional [empresa=" + empresa + "]";
+	}
+
+
 	public void setEmpresa(String empresa) {
 		this.empresa = empresa;
 	}
