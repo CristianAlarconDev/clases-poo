@@ -15,10 +15,9 @@ public class Agenda {
 		contactos.add(unContacto);
 	}
 	public void mostrarAgenda () {
-		
 		for(Contacto contacto :contactos ) {
-			
-			System.out.println(contacto);		
+			contacto.mostrarInformacion();
+			System.out.printf("%n");
 		}
 	}
 }

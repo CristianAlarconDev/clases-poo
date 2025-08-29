@@ -1,6 +1,6 @@
 package clase04;
 
-public class Contacto {
+public abstract class Contacto {
 	private String nombre, correo;
 	private Direccion direccion;
 	
@@ -14,7 +14,15 @@ public class Contacto {
 	public String getNombre() {
 		return nombre;
 	}
-
+	protected void mostrarInformacionBase() {
+		System.out.println("Nombre: "+ this.nombre);
+		System.out.println("Correo: "+ this.correo);
+		System.out.println("Direccion: "+ this.direccion.getNombre()+ 
+				" "+ this.direccion.getAltura());
+		
+	}
+	public abstract void  mostrarInformacion();
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
@@ -34,7 +42,7 @@ public class Contacto {
 	public void setDireccion(Direccion direccion) {
 		this.direccion = direccion;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Contacto [nombre=" + nombre + ", correo=" + correo + ", direccion=" + direccion + "]";

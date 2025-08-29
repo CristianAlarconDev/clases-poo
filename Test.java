@@ -14,7 +14,7 @@ public class Test {
 		
 		//System.out.println(cpersonal);
 		
-		Direccion dprofesional = new Direccion("Calle empresa", 555, 1409);
+		Direccion dprofesional = new Direccion("Calle falsa", 555, 1409);
 		ContactoProfesional cprofesional = new ContactoProfesional("Laura", 
 				"laura@gmail.com", dprofesional, "ACME S.A.");
 

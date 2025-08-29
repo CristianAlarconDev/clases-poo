@@ -22,9 +22,10 @@ public class ContactoPersonal extends Contacto{
 	public String toString() {
 		return "ContactoPersonal [fechaCumple=" + fechaCumple + ", toString()=" + super.toString() + "]";
 	}	
-	public void mostrarInfo() {
+	public void mostrarInformacion() {
 		System.out.println("Contacto personal");
-		System.out.println("Fecha cumple: "+ this.fechaCumple);
+		super.mostrarInformacionBase();
+		System.out.println("Fecha cumple: "+ this.getFechaCumple());
 	}
 }
 
