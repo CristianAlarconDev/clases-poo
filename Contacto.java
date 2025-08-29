@@ -34,6 +34,13 @@ public class Contacto {
 	public void setDireccion(Direccion direccion) {
 		this.direccion = direccion;
 	}
+
+	@Override
+	public String toString() {
+		return "Contacto [nombre=" + nombre + ", correo=" + correo + ", direccion=" + direccion + "]";
+	}
+
+
 	
 	
 	

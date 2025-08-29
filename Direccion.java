@@ -2,6 +2,11 @@ package clase04;
 
 public class Direccion {
 
+	@Override
+	public String toString() {
+		return "Direccion [nombre=" + nombre + ", altura=" + altura + ", codigoPostal=" + codigoPostal + "]";
+	}
+
 	private String nombre;
 	private int altura, codigoPostal;
 	
